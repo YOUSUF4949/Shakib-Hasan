@@ -1,0 +1,210 @@
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:60%;
+    margin: auto;
+    height:100vh;
+    /* background-color:darkgreen; */
+}
+
+/* Header section design Here */
+.navbar{
+    /* background-color:gray; */
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 0px;
+}
+
+.navbar .icon img{
+    width:90px;
+    height:90px;
+}
+/* Section 1 disign starts here */
+.section1{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.left-side{
+    width:60%;
+    text-align: justify;
+    padding:15px;
+    color:#333;
+}
+
+.right-side{
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#333;
+    color:white;
+    text-align: center;
+    padding:20px;
+    border-radius:5px;
+}
+
+.right-side #text{
+    background-color:yellow;
+    color:black;
+    width:50%;
+    padding:10px;
+    margin-top:10px;
+    font-weight: bold;
+    border-radius:3px;
+    font-size: 18px;
+}
+/* Section 1 disign Ends here */
+
+/* Product section Design starts Here */
+table{
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+
+table #T-head th{
+    background-color:orange;
+    width:100%;
+    font-size:25px;
+    padding:10px;
+}
+
+table tr td img{
+    width:150px;
+    float:left;
+}
+
+table tr td p{
+    float: left;
+    width:200px;
+    margin-top:30px;
+    font-size:22px;
+    text-align:center;
+}
+table tr td{
+    font-size:20px;
+}
+
+#table2 tr td{
+    display:flex;
+    justify-content: space-between;
+    color:#333;
+    line-height: 35px;
+}
+
+.section3{
+    background-color:#cbcdd9;
+    padding:20px;
+}
+
+.section3 h3{
+    font-size:22px;
+}
+
+.section3 h4{
+    font-size:18px;
+    letter-spacing: 0.3px;
+    line-height: 28px;
+    margin:10px 0px;
+}
+
+
+/* Responsive with media query */
+@media screen and (max-width:375px){
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    .section1{
+        display:block;
+        width:100%;
+        margin:auto;
+    }
+
+    .navbar{
+        padding:0px;
+    }
+
+    .navbar .logo img{
+        width: 150px;
+    }
+
+    .navbar .icon img{
+        width: 70px;
+        height:70px;
+    }
+
+    .left-side{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .right-side{
+        width:100%;
+    }
+    /* product section */
+    .section2{
+
+    }
+    table{
+        width:100%;
+        margin:auto;
+    }
+
+    table #T-head th{
+        font-size:18px;
+        padding:5px 3px;
+    }
+
+    table #product  img{
+        width:40%;
+    }
+
+    table tr td p{
+        float: left;
+        width:60%;
+        margin-top:10px;
+        font-size:17px;
+        text-align:left;
+    }
+
+    table tr td{
+        font-size:17px;
+    }
+
+    .section3 h3{
+        font-size:18px;
+    }
+
+    .section3 h4{
+        font-size:16px;
+        text-align:justify;
+    }
+
+    .section3 p{
+        margin:15px 0px;
+    }
+
+}
+
+/* media query for the 768px */
+/* @media screen and (max-width:768px){
+    .container{
+        width:70%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container{
+        width:80%;
+        margin:auto;
+    }
+} */
